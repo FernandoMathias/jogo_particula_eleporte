@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scp_draws",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scp_draws",
+  "parent":{
+    "name":"Teleporte",
+    "path":"Teleporte.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
