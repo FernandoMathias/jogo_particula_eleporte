@@ -9,7 +9,7 @@ if (shop_open_y>1.5)
 }
 
 draw_circle(x,y,32,false)
-draw_text_ext_colour(x-10,y-8,obj_player.coins,100,100,c_black,c_black,c_black,c_black,1)
+draw_text_ext_colour(x-10,y-8,obj_ctrl.coins,100,100,c_black,c_black,c_black,c_black,1)
 
 if shop_open
 {	

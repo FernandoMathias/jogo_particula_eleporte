@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scp_teleports",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scp_teleports",
+  "parent":{
+    "name":"Teleporte",
+    "path":"Teleporte.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

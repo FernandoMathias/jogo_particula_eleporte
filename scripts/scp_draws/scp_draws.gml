@@ -31,13 +31,13 @@ function draw_upgrade(_x,_y,_num){
 		
 		if (mouse_check_button_pressed(mb_left))
 		{
-			if (obj_player.coins>=_cost)
+			if (obj_ctrl.coins>=_cost)
 			{
-				obj_player.coins-=_cost
+				obj_ctrl.coins-=_cost
 				obj_shop.upgrades[_num]=true
 				
 				for (var _i=0; _i<10; _i++)
-				instance_create_layer(_x,_y,layer,obj_particles)
+				instance_create_layer(_x,_y,layer,obj_shadow)
 				
 				update_upgrades()
 			}
@@ -50,16 +50,16 @@ function draw_upgrade(_x,_y,_num){
 
 function update_upgrades()
 {
-	obj_player.time_auto_limit = 0
+	obj_ctrl.time_auto_limit = 0
 	if (obj_shop.upgrades[0])
 	{
-		obj_player.time_auto_limit = 600 * obj_shop.upgrades[0]
+		obj_ctrl.time_auto_limit = 600 * obj_shop.upgrades[0]
 	}
 	
-	obj_player.click_coins = 1
+	obj_ctrl.click_coins = 1
 	if (obj_shop.upgrades[1])
 	{
-		obj_player.click_coins = 1 + obj_shop.upgrades[1]
+		obj_ctrl.click_coins = 1 + obj_shop.upgrades[1]
 	}
 }
 
